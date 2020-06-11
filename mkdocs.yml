@@ -1,0 +1,63 @@
+site_name: 蟒营® 作曲起蒙原型班
+site_description: 蟒营®系列 Pythonic 实训课程
+site_author: guru101camp@googlegroups.com
+site_url: https://mu.101.camp/
+repo_url: https://github.com/101camp/comments/issues
+repo_name: github
+copyright: ©101camp 2018-2020 
+
+theme:
+  font: false
+  logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
+  favicon: /img/101camp_bauhaus_v4h420.ico
+  name: 'windmill-dark'
+  custom_dir: '_theme/material'
+
+theme:
+    name: null
+    font: false
+    logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
+    favicon: /img/101camp_bauhaus_v4h420.ico
+    custom_dir: '_theme/mkdocs_windmill_dark'
+
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.smartsymbols
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+
+plugins: []
+
+nav:
+    - Home: index.md
+    - '过程': 
+      - '预备': process/0_prepare.md
+      - '报名': process/1_signup.md
+      - '进入': process/2_enter.md
+      - '行进': process/3_running.md
+      - '结束': process/4_restart.md
+      - '框架': process/5_framework.md
+    - '缘由': 
+      - '元初': story/0_originating.md
+      - '起始': story/1_pythonicamp.md
+      - '后来': story/2_camp2college.md
+      - '再又': story/3_camp2om.md
+      - '然后': story/4_camp4debug.md
+      - '现在': story/5_101camp.md
+    - '运维': 
+      - '部署': scm/deploy.md
+      - 'SSL': scm/https.md
+    - '有关': 
+      - '关于': about/readme.md
+      - '商标': about/brand.md
+      - '资源': about/resource.md
+      - '设计': about/design.md
+      - '许可': about/license.md
+
+
+

@@ -1,0 +1,5 @@
+invoke
+mkdocs
+mkdocs-material
+mkdocs-windmill-dark
+pymdown-extensions
