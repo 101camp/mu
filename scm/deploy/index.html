@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="guru101camp@googlegroups.com">
+    <link rel="canonical" href="https://mu.101.camp/scm/deploy/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>部署 - 蟒营® 作曲起蒙原型班</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "\u90e8\u7f72", url: "#_top", children: [
+              {title: "env.", url: "#env" },
+              {title: "depend", url: "#depend" },
+              {title: "\u662f\u4e5f\u4e4e", url: "#_2" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../https/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../https/" class="btn btn-xs btn-link">
+        SSL
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../story/5_101camp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../story/5_101camp/" class="btn btn-xs btn-link">
+        现在
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="_1">部署</h1>
+<h2 id="env">env.</h2>
+<p>开发环境:</p>
+<pre><code>
+༄  screenfetch
+
+                 -/+:.          zoomq@ZQ160626rMBP
+                :++++.          OS: 64bit Mac OS X 10.12.6 16G2136
+               /+++/.           Kernel: x86_64 Darwin 16.7.0
+       .:-::- .+/:-``.::-       Uptime: 14d 2h 33m
+    .:/++++++/::::/++++++/:`    Packages: 238
+  .:///////////////////////:`   Shell: bash
+  ////////////////////////`     Resolution: 2560x1600 2560x1440
+ -+++++++++++++++++++++++`      DE: Aqua
+ /++++++++++++++++++++++/       WM: Quartz Compositor
+ /sssssssssssssssssssssss.      WM Theme: Blue
+ :ssssssssssssssssssssssss-     CPU: Intel Core i7-5557U @ 3.10GHz
+  osssssssssssssssssssssssso/`  GPU: Intel Iris Graphics 6100
+  `syyyyyyyyyyyyyyyyyyyyyyyy+`  RAM: 8760MiB / 16384MiB
+   `ossssssssssssssssssssss/
+     :ooooooooooooooooooo+.
+      `:+oo+/:-..-:/+o+/-
+
+</code></pre>
+
+<h2 id="depend">depend</h2>
+<p>Install with <code>pip</code>:</p>
+<pre><code class="sh">$   pip install -r requirements.txt
+</code></pre>
+
+<p>Append to <code>mkdocs.yml</code>:</p>
+<pre><code class="yaml">theme:
+  name: 'material'
+</code></pre>
+
+<p>并使用定制自动运营脚本来完成编译和发布:</p>
+<pre><code class="sh">
+༄  echo '' &gt; _trigger/deploy.md
+
+༄  inv pub 101
+
+/opt/data/Sites/101.camp/_running
+
+     crt. PATH ===
+/Users/zoomq/Sites/101.camp/_running/gl_101.camp
+Already up-to-date.
+
+     crt. PATH ===
+/opt/data/Sites/101.camp/_running/zq_gh101camp
+Already up-to-date.
+
+     crt. PATH ===
+/Users/zoomq/Sites/101.camp/_running/gl_101.camp
+./_trigger
+TRIGGERed by deploy.md exist
+auto deplo NOW:
+
+...
+
+
+ 3 files changed, 76 insertions(+)
+To github.com:ZoomQuiet/gh101camp.git
+   9b88f3c..9ec3eab  master -&gt; master
+
+     powded by pub101CAMP v.191011.2042
+</code></pre>
+
+<h2 id="_2">是也乎</h2>
+<ul>
+<li>191018 DAMA upgrade theme+cfg</li>
+<li>190321 DAMA upgrade theme +ico</li>
+<li>190320 DAMA deploy as 101.camp</li>
+<li>190202 DAMA base gh-pages</li>
+<li>190201 DAMA init.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../https/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../https/" class="btn btn-xs btn-link">
+        SSL
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../story/5_101camp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../story/5_101camp/" class="btn btn-xs btn-link">
+        现在
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+      <p>
+        <a href="https://github.com/101camp/comments/issues/edit/master/docs/scm/deploy.md">Edit on github</a>
+      </p><p>©101camp 2018-2020</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/101camp/comments/issues/">Windmill Dark</a> theme by guru101camp@googlegroups.com (noraj).</p>
+</footer>
+
+</body>
+</html>
