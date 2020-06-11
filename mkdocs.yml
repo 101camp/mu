@@ -6,19 +6,24 @@ repo_url: https://github.com/101camp/comments/issues
 repo_name: github
 copyright: ©101camp 2018-2020 
 
+
+#theme:
+#  font: false
+#  logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
+#  favicon: /img/101camp_bauhaus_v4h420.ico
+#  name: 'windmill-dark'
+#  custom_dir: '_theme/material'
+#theme:
+#    name: null
+#    font: false
+#    logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
+#    favicon: /img/101camp_bauhaus_v4h420.ico
+#    custom_dir: '_theme/mkdocs_windmill_dark'
 theme:
+  name: mkdocs
   font: false
   logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
   favicon: /img/101camp_bauhaus_v4h420.ico
-  name: 'windmill-dark'
-  custom_dir: '_theme/material'
-
-theme:
-    name: null
-    font: false
-    logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
-    favicon: /img/101camp_bauhaus_v4h420.ico
-    custom_dir: '_theme/mkdocs_windmill_dark'
 
 
 markdown_extensions:
