@@ -8,69 +8,99 @@
         <meta name="author" content="guru101camp@googlegroups.com">
         <link rel="canonical" href="https://mu.101.camp/process/2_enter/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>进入 - 蟒营® 作曲起蒙原型班</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <title>进入 - 蟒营® 作曲启蒙原型班</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">蟒营® 作曲起蒙原型班</a>
-                </div>
+                <a class="navbar-brand" href="../..">蟒营® 作曲启蒙原型班</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">有关 <b class="caret"></b></a>
+                            <li class="navitem">
+                                <a href="../../faq.md" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">过程 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../about/readme/">关于</a>
+<li>
+    <a href="../1_signup/" class="dropdown-item">报名</a>
 </li>
                                     
-<li >
-    <a href="../../about/brand/">商标</a>
+<li>
+    <a href="./" class="dropdown-item active">进入</a>
 </li>
                                     
-<li >
-    <a href="../../about/license/">许可</a>
+<li>
+    <a href="../3_running/" class="dropdown-item">行进</a>
+</li>
+                                    
+<li>
+    <a href="../4_restart/" class="dropdown-item">结束</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">故事 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../story/students/" class="dropdown-item">echo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">有关 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/works/" class="dropdown-item">作品</a>
+</li>
+                                    
+<li>
+    <a href="../../about/brand/" class="dropdown-item">商标</a>
+</li>
+                                    
+<li>
+    <a href="../../about/license/" class="dropdown-item">许可</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="https://github.com/101camp/comments/issues/edit/master/docs/process/2_enter.md">Edit on github</a>
+                    <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../1_signup/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../3_running/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/101camp/mu/edit/master/docs/process/2_enter.md" class="nav-link">Edit on github</a>
                             </li>
                     </ul>
                 </div>
@@ -78,67 +108,162 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">进入</a></li>
-            <li><a href="#_2">现象</a></li>
-            <li><a href="#_3">分析</a></li>
-            <li><a href="#_4">对策</a></li>
-            <li><a href="#_5">行动</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="0"><a href="#_1" class="nav-link">进入</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">明心</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#_3" class="nav-link">准备</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="1"><a href="#_4" class="nav-link">投入</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="_1">进入</h1>
 <blockquote>
-<p>全真软件工程环境的进入得有个学习过程</p>
+<p>作曲是一连串创造性活动, 必须有合理支撑</p>
 </blockquote>
-<h2 id="_2">现象</h2>
-<p>大家都以为报个班, 看完资料, 作完作业, 就变成软件工程师了.</p>
+<h2 id="_2">明心</h2>
 <blockquote>
-<p>等等, 那大学为什么要设立学制四年的计算机系?</p>
-</blockquote>
-<h2 id="_3">分析</h2>
-<blockquote>
-<p>IMHO:</p>
+<p>明确是否真心要学作曲</p>
 </blockquote>
 <ul>
-<li>各种线上/下 培训班需要这种误解来吸引报名</li>
-<li>毕竟, 青鸟都不承诺包分配了<ul>
-<li>好象, 这也是为什么 <code>蓝翔</code> 成为培训霸主的主要原因</li>
+<li>有足够强力的个人电脑嘛?</li>
+<li>每周有足够可控时间嘛?</li>
+<li>任何困难愿意努力尝试并积极提问嘛?</li>
+<li>...</li>
 </ul>
-</li>
-<li>而且, 这也是渴望通过短期培训完成职业跳行的大家愿意相信的</li>
-<li>导致, 这明显逻辑上都有问题的广告辞, 大家心照不宣的同时表演相信了.</li>
-</ul>
-<h2 id="_4">对策</h2>
+<h2 id="_3">准备</h2>
 <blockquote>
-<p>蠎营-style</p>
+<p>设备+软件+时间+精力</p>
+</blockquote>
+<h2 id="_4">投入</h2>
+<blockquote>
+<p>每周最小投入</p>
 </blockquote>
 <ul>
-<li>构建和真实软件项目完全一致的环境</li>
-<li>设立有真实上下文关系的开发任务</li>
-<li>在实战中理解获得实战技能</li>
+<li>10+小时以上练习</li>
+<li>21+小时以上思考</li>
+<li>42+小时以上聆听</li>
 </ul>
-<h2 id="_5">行动</h2>
-<blockquote>
-<p>所以</p>
-</blockquote>
+<pre><code> __  __           _           _
+|  \/  |_   _ ___(_) ___ __ _| |
+| |\/| | | | / __| |/ __/ _` | |
+| |  | | |_| \__ \ | (_| (_| | |
+|_|  |_|\__,_|___/_|\___\__,_|_|
+
+</code></pre>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+<hr/>
+
+<h3>蟒营®作曲启蒙原型班 正在报名</h3>
+<h4>大师班 所有 demo 均由导师亲自点评</h4>
+
+<blockquote><p>
+    
 <ul>
-<li>收到邮件通知/提醒后</li>
-<li>进入课程对应环境</li>
-<li>第一时间, 其实就不是等待:<ul>
-<li>而是主动根据环境官方资料</li>
-<li>自学/使用环境</li>
-<li>先习惯主要功能</li>
-<li>再和同学们开始互动</li>
+    <li>
+    开始报名: <b>2020.6.11</b> </li>
+    <li>
+    报名截止: <b>2020.6.19</b> </li>
+    <li>
+    公开试讲: <b>2020.6.19</b> </li>
+    <li>
+    正式开课: <b>2020.6.21</b> </li>
+    <li>
+    课程结束: <b>2020.7.19</b> </li>
 </ul>
-</li>
-<li>以便, 课程启动后, 直接开展编程协作<ul>
-<li>而不是旁观...</li>
-</ul>
-</li>
-</ul></div>
+
+
+<img alt="101camp0mu" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-06-11-mu-reg-zip.jpg"/>
+
+</p></blockquote>
+
+
+<h2>蟒营®式 原创课程</h2>
+<p>
+    伴你重享<b>创作</b>乐趣
+</p>
+
+<blockquote>
+<p>
+    <b>
+    <a href="https://py.101.camp/">py.101.camp</a>
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teching <b>with You</b>
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-28-FAQ101camp-qr.jpeg?imageView2/2/w/360"/>
+
+<p>关注公众号, 持续获得相关各种咨询:
+    <br/>
+<img alt="mainium" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-15-mainium-qr-barnner.jpg"/>
+</p>
+
+<hr/>
+
+<h4>追问</h4>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    askdama@googlegroups.com
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+                    </div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -152,12 +277,12 @@
         </script>
         <script src="../../js/base.js" defer></script>
 
-        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">

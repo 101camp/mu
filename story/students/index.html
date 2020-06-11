@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="guru101camp@googlegroups.com">
-        <link rel="canonical" href="https://mu.101.camp/scm/deploy/">
+        <link rel="canonical" href="https://mu.101.camp/story/students/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>部署 - 蟒营® 作曲启蒙原型班</title>
+        <title>echo - 蟒营® 作曲启蒙原型班</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,12 +60,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">故事 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../story/students/" class="dropdown-item">echo</a>
+    <a href="./" class="dropdown-item active">echo</a>
 </li>
                                 </ul>
                             </li>
@@ -90,7 +90,17 @@
 
                     <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a href="https://github.com/101camp/mu/edit/master/docs/scm/deploy.md" class="nav-link">Edit on github</a>
+                                <a rel="prev" href="../../process/4_restart/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../about/works/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/101camp/mu/edit/master/docs/story/students.md" class="nav-link">Edit on github</a>
                             </li>
                     </ul>
                 </div>
@@ -110,17 +120,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="0"><a href="#_1" class="nav-link">部署</a>
+            <li class="nav-item" data-level="0"><a href="#_1" class="nav-link">以往反馈</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="1"><a href="#env" class="nav-link">env.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="1"><a href="#depend" class="nav-link">depend</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">是也乎</a>
+            <li class="nav-item" data-level="1"><a href="#refer" class="nav-link">refer</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -131,80 +133,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">部署</h1>
-<h2 id="env">env.</h2>
-<p>开发环境:</p>
-<pre><code>
-༄  screenfetch
-
-                 -/+:.          zoomq@ZQ160626rMBP
-                :++++.          OS: 64bit Mac OS X 10.12.6 16G2136
-               /+++/.           Kernel: x86_64 Darwin 16.7.0
-       .:-::- .+/:-``.::-       Uptime: 14d 2h 33m
-    .:/++++++/::::/++++++/:`    Packages: 238
-  .:///////////////////////:`   Shell: bash
-  ////////////////////////`     Resolution: 2560x1600 2560x1440
- -+++++++++++++++++++++++`      DE: Aqua
- /++++++++++++++++++++++/       WM: Quartz Compositor
- /sssssssssssssssssssssss.      WM Theme: Blue
- :ssssssssssssssssssssssss-     CPU: Intel Core i7-5557U @ 3.10GHz
-  osssssssssssssssssssssssso/`  GPU: Intel Iris Graphics 6100
-  `syyyyyyyyyyyyyyyyyyyyyyyy+`  RAM: 8760MiB / 16384MiB
-   `ossssssssssssssssssssss/
-     :ooooooooooooooooooo+.
-      `:+oo+/:-..-:/+o+/-
-
-</code></pre>
-
-<h2 id="depend">depend</h2>
-<p>Install with <code>pip</code>:</p>
-<pre><code class="sh">$   pip install -r requirements.txt
-</code></pre>
-
-<p>Append to <code>mkdocs.yml</code>:</p>
-<pre><code class="yaml">theme:
-  name: 'material'
-</code></pre>
-
-<p>并使用定制自动运营脚本来完成编译和发布:</p>
-<pre><code class="sh">
-༄  echo '' &gt; _trigger/deploy.md
-
-༄  inv pub 101
-
-/opt/data/Sites/101.camp/_running
-
-     crt. PATH ===
-/Users/zoomq/Sites/101.camp/_running/gl_101.camp
-Already up-to-date.
-
-     crt. PATH ===
-/opt/data/Sites/101.camp/_running/zq_gh101camp
-Already up-to-date.
-
-     crt. PATH ===
-/Users/zoomq/Sites/101.camp/_running/gl_101.camp
-./_trigger
-TRIGGERed by deploy.md exist
-auto deplo NOW:
-
-...
-
-
- 3 files changed, 76 insertions(+)
-To github.com:ZoomQuiet/gh101camp.git
-   9b88f3c..9ec3eab  master -&gt; master
-
-     powded by pub101CAMP v.191011.2042
-</code></pre>
-
-<h2 id="_2">是也乎</h2>
+<h1 id="_1">以往反馈</h1>
+<blockquote>
+<p>zoe：听说黄老师又要开课了，因为我很希望这期课大概率能够开成，如果项目组不介意，我再提议一个形式：极端情况下，10人开课，加上班长那的学员001，我可以当学员002-010。当做我希望能够开课成功的美好祝福。</p>
+<p>天一：儿时的我曾梦想自己成为一名艺术家，没想到长大后成为了一名数据工程师，996的压力让我试图寻求一个宣泄口，而这时候黄老师出现了，原来编曲也能像编程一样玩儿！平常喜欢哼唧唧的我，原来不一定需要懂乐理，就能通过软件创作出自己的作品，通过组块与组块的拼接，发出完全属于自己的声音。</p>
+<p>李仁冲：深入《音乐编程课》，你对世界的认知，会发生改变。五蕴，色声香味触法，声音对情绪影响最大。无论自己是否意识得到，这个世界，充斥着声音；而解构音乐，注意力的背后，是鼓点节奏、是高音低音、是旋律Fader，乃至将吸引力刻入基因的人声……
+创造，在声音的世界，有无限可能；而这里，每一个凡人，都可以成为——音乐创作者！</p>
+<p>大家好，我是黄老师的学生，我叫 “<a href="https://music.163.com/#/artist?id=12002097">Noffsky</a>”，大家可以在各大平台搜索到我的足迹。</p>
+</blockquote>
+<p>我从小学习钢琴，并且一直深爱着。平时自己会写一些想到的旋律，或者是乐段，也有了一些自己的作品，那么多年一直都是处于自己在黑暗中慢慢摸索的阶段，无论是在乐团里的修炼，还是自己在网络世界的呕心沥血。我的强项是钢琴相关的演奏与创作，但是我从来没有涉略过管弦与电音等其他音乐种类的创作。2020年我认识了黄老师，在他的带领下，我一步步迈向音乐森林的深处。</p>
+<p>黄老师在音乐领域非常专业，对我也十分真诚。他教会了我音乐软件更全面的用法，配器上的知识，音乐制作上的经验，新的看待音乐，声音的方式。上他的课程，如沐春风，我十分受用。他的教诲无形地搀扶着我现在的每一次创作。</p>
+<p>黄老师非常了解我，所以教学效率高。从我们初识，黄老师便了解我是一个什么样的学生，并且对我因材施教。有的时候甚至会用我更加听得懂的言语组织模式来与我交流。他不厌其烦地回答我形形色色的问题，让我非常感动。谢谢黄老师！</p>
+<h2 id="refer">refer</h2>
 <ul>
-<li>191018 DAMA upgrade theme+cfg</li>
-<li>190321 DAMA upgrade theme +ico</li>
-<li>190320 DAMA deploy as 101.camp</li>
-<li>190202 DAMA base gh-pages</li>
-<li>190201 DAMA init.</li>
+<li><a href="https://www.jianshu.com/p/5a62b8ff2510">重看蟒营课程介绍，我觉得我赚了100W - 简书</a></li>
 </ul>
 
 

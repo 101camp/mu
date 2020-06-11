@@ -6,7 +6,37 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://mu.101.camp/about/readme/</loc>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/process/1_signup/</loc>
+     <lastmod>2020-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/process/2_enter/</loc>
+     <lastmod>2020-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/process/3_running/</loc>
+     <lastmod>2020-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/process/4_restart/</loc>
+     <lastmod>2020-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/story/students/</loc>
+     <lastmod>2020-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://mu.101.camp/about/works/</loc>
      <lastmod>2020-06-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
