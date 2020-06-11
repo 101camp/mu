@@ -60,20 +60,10 @@ from invoke import task
 from textwrap import dedent as dedentxt
 
 CAMPROOT = os.environ.get("CAMPSITES_ROOT")
-CSITES = {'101':{'gl':'gl_101.camp'
-                , 'ghp':'zq_gh101camp'
-                , 'log':'dlog_gh_101camp'
-                , 'CNAME':'101.camp'
-                }
-        , 'py':{'gl':'gl_py.101.camp'
-                , 'ghp':'zq_ghpy101camp'
-                , 'log':'dlog_gh_py101camp'
-                , 'CNAME':'py.101.camp'
-                }
-        , 'www':{'gl':'gl_py.101.camp'
-                , 'ghp':'zq_ghwww101camp'
-                , 'log':'zq_ghpy101camp'
-                , 'CNAME':'www.101.camp'
+CSITES = {'mu':{'gl':'mu'
+                , 'ghp':'mu_gh-pages'
+                , 'log':''
+                , 'CNAME':'mu.101.camp'
                 }
         }
 
@@ -265,55 +255,6 @@ def pub(c, site):
     return None
 
 
-#@task
-def sync2www(c, site):
-    '''rsync zq_ghpy101camp->zq_ghwww101camp
-    base How to use rsync to backup a directory without git subdirectory - Unix & Linux Stack Exchange
-https://unix.stackexchange.com/questions/100660/how-to-use-rsync-to-backup-a-directory-without-git-subdirectory
-    
-    '''
-    #print(site, CSITES[site]['gl'], CSITES[site]['ghp'])
-    RES = '%s/%s'%(CAMPROOT, CSITES[site]['log'])
-    AIM = '%s/%s'%(CAMPROOT, CSITES[site]['ghp'])
-    _sync = "rsync -av --exclude='.git/' {}/ {}/".format(RES, AIM)
-    #print(_sync)
-    c.run(_sync, hide=False, warn=True)
-    c.run('ls %s/'% AIM, hide=False, warn=True)
-    c.run('pwd')
-    
-    return None
-    c.run('cp -rvf img %s/'% AIM, hide=False, warn=True)
-    c.run('ls %s/'% AIM, hide=False, warn=True)
-    c.run('pwd')
-
-
-@task 
-def www(c ):
-    '''$ inv www  <- auto sync py.101.camp -> www.101.camp
-    '''
-    global TRIGGER
-    global CAMPROOT
-    global CSITES
-    print(CAMPROOT)
-    _site = 'www'
-    pl(c, _site)
-    _crt = '%s/%s'%(CAMPROOT, CSITES[_site]['gl'])
-    cd(c, _crt)
-    #chktri(c)
-    
-    print('auto sync NOW for pub...')
-    #return None
-    sync2www(c, _site)
-    
-    #bu(c)
-
-    #pu(c)
-    #ccname(c)
-    #sync4media(c)
-    gh(c, _site)
-    ver(c)
-
-    return None
 
 
 
