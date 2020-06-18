@@ -58,6 +58,7 @@ nav:
     - '故事': 
       - 'echo': story/students.md
     - '有关': 
+      - '命名': about/name.md
       - '作品': about/works.md
       #- '关于': about/readme.md
       - '商标': about/brand.md
