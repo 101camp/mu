@@ -9,6 +9,12 @@
 - [【五维介质・星尘/海伊/苍穹】首张官方专辑『天方夜谭Fairyland』试听PV_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/video/av48301519/?share_medium=web&share_source=weibo&bbid=5B7EBD94-54FF-41A4-91A9-728706CA4D5B77389infoc&ts=1554436949243)
 
 
+> 部分学生作品
+
+- [Noffsky](https://music.163.com/#/artist?id=12002097),[Joie de Bodhi N.20200502 菩提爽](https://music.163.com/song?id=1445358965&userid=97717215),[Autocollant N.20200424 贴贴纸](https://music.163.com/song?id=1443111112&userid=97717215)
+- 李仁冲：[玄之又弦]( http://url.cn/Cz3jJVbQ),[极燃动力品牌视频](https://music.163.com/song?id=1445358965&userid=97717215)
+- 灵魂操音手：[disorder](http://url.cn/5qDqqRo)
+
 
 ## logging
 
